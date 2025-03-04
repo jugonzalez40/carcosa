@@ -20,9 +20,6 @@
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 const { logger } = require("firebase-functions");
 const { start } = require("./task");
-const { setGlobalOptions } = require("firebase-functions/v2");
-
-setGlobalOptions({ region: "europe-west3" });
 
 // The Firebase Admin SDK to delete inactive users.
 const admin = require("firebase-admin");
