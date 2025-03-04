@@ -26,7 +26,6 @@ const applyPostFilters = (results) => {
 };
 
 const getCars = async (offset = 0) => {
-  console.log("getCars() offset: ", offset);
   logger.info("getCars() offset: ", offset);
   const meliAPIUrl = "https://api.mercadolibre.com/sites/MCO/search";
 
@@ -56,7 +55,6 @@ const getFullResults = async () => {
   const { paging, results } = await getCars(INITIAL_OFFSET);
 
   const { total } = paging;
-  console.log("total: ", total);
   logger.info("total: ", total);
 
   const totalPages = Math.ceil(total / QUERY_LIMIT);
@@ -74,7 +72,6 @@ const getFullResults = async () => {
 
   const fullResult = [...results, ...resolvedResults];
 
-  console.log("fullResult: ", fullResult.length);
   logger.info("fullResult: ", fullResult.length);
 
   return fullResult;
@@ -83,27 +80,25 @@ const getFullResults = async () => {
 };
 
 const start = async () => {
-  console.log("====================================");
   logger.info("====================================");
-  console.log("====CARCOSA HAS BEEN TICK ============");
+
   logger.info("====CARCOSA HAS BEEN TICK ============");
-  console.log(`====AT ${new Date().toISOString()} ===========`);
+
   logger.info(`====AT ${new Date().toISOString()} ===========`);
 
   try {
     const result = await getFullResults();
     const filteredResults = applyPostFilters(result);
 
-    console.log("PRE FIRE");
     logger.info("PRE FIRE");
     await addCars(filteredResults);
-    console.log("POST FIRE");
-    logger.info("POST FIRE");
-  } catch (error) {
-    console.log("AN ERROR FATAL");
-    
 
-    console.error(error);
+    logger.info("POST FIRE:", filteredResults.length);
+    logger.info("====CARCOSA HAS BEEN TACK ============");
+  } catch (error) {
+    logger.error("AN ERROR FATAL");
+
+    logger.error(error);
   }
 };
 // start();
