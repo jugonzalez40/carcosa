@@ -1,0 +1,426 @@
+{
+  "id": "MCO1550513129",
+  "title": "Kia Cerato Pro Ex 2.0",
+  "condition": "used",
+  "thumbnail_id": "858594-MCO82555229990_032025",
+  "catalog_product_id": "MCO17054692",
+  "listing_type_id": "gold_premium",
+  "sanitized_title": "",
+  "permalink": "https://carro.mercadolibre.com.co/MCO-1550513129-kia-cerato-pro-ex-20-_JM",
+  "buying_mode": "classified",
+  "site_id": "MCO",
+  "category_id": "MCO1744",
+  "domain_id": "MCO-CARS_AND_VANS",
+  "thumbnail": "http://http2.mlstatic.com/D_858594-MCO82555229990_032025-I.jpg",
+  "currency_id": "COP",
+  "order_backend": 1,
+  "price": 53900000,
+  "original_price": null,
+  "sale_price": {
+    "price_id": "",
+    "amount": 53900000,
+    "conditions": {
+      "eligible": true,
+      "context_restrictions": [],
+      "start_time": null,
+      "end_time": null
+    },
+    "currency_id": "COP",
+    "exchange_rate": null,
+    "payment_method_prices": [],
+    "payment_method_type": "TMP",
+    "regular_amount": null,
+    "type": "standard",
+    "metadata": {}
+  },
+  "available_quantity": 1,
+  "official_store_id": null,
+  "use_thumbnail_id": true,
+  "accepts_mercadopago": false,
+  "shipping": {
+    "store_pick_up": false,
+    "free_shipping": false,
+    "logistic_type": null,
+    "mode": "not_specified",
+    "tags": [],
+    "benefits": null,
+    "promise": null,
+    "shipping_score": -1
+  },
+  "stop_time": "2025-06-01T04:00:04.885Z",
+  "seller": {
+    "id": 2300557119,
+    "nickname": "LRAMIREZ93844"
+  },
+  "address": {
+    "state_id": "TUNPUEJPR1gxMDljZA",
+    "state_name": "Bogotá D.C.",
+    "city_id": "TUNPQ1BVRTg0NTU0",
+    "city_name": "Puente Aranda"
+  },
+  "attributes": [
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición del ítem",
+      "value_id": "2230581",
+      "value_name": "Usado",
+      "attribute_group_id": "",
+      "attribute_group_name": "",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "struct": null,
+          "source": 1
+        }
+      ],
+      "source": 1,
+      "value_type": "list"
+    },
+    {
+      "id": "COLOR",
+      "name": "Color",
+      "value_id": "52053",
+      "value_name": "Plateado",
+      "attribute_group_id": "ADICIONALES",
+      "attribute_group_name": "Características generales",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "52053",
+          "name": "Plateado",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "string"
+    },
+    {
+      "id": "HAS_AIR_CONDITIONING",
+      "name": "Aire acondicionado",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "attribute_group_id": "CONFORT",
+      "attribute_group_name": "Confort",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "boolean"
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "value_id": "374002",
+      "value_name": "Kia",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "374002",
+          "name": "Kia",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "string"
+    },
+    {
+      "id": "DOORS",
+      "name": "Puertas",
+      "value_id": "60241",
+      "value_name": "4",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "60241",
+          "name": "4",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "number"
+    },
+    {
+      "id": "ENGINE",
+      "name": "Motor",
+      "value_id": "2164443",
+      "value_name": "1.6",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2164443",
+          "name": "1.6",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "string"
+    },
+    {
+      "id": "FUEL_TYPE",
+      "name": "Tipo de combustible",
+      "value_id": "64364",
+      "value_name": "Gasolina",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "64364",
+          "name": "Gasolina",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "list"
+    },
+    {
+      "id": "KILOMETERS",
+      "name": "Kilómetros",
+      "value_id": null,
+      "value_name": "67000 km",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": {
+        "number": 67000,
+        "unit": "km"
+      },
+      "values": [
+        {
+          "id": null,
+          "name": "67000 km",
+          "struct": {
+            "number": 67000,
+            "unit": "km"
+          },
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "number_unit"
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "value_id": "5958935",
+      "value_name": "CERATO PRO",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "5958935",
+          "name": "CERATO PRO",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "string"
+    },
+    {
+      "id": "TRANSMISSION",
+      "name": "Transmisión",
+      "value_id": "370877",
+      "value_name": "Mecánica",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "370877",
+          "name": "Mecánica",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "list"
+    },
+    {
+      "id": "TRIM",
+      "name": "Versión",
+      "value_id": "9418220",
+      "value_name": "1.6l",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "9418220",
+          "name": "1.6l",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "string"
+    },
+    {
+      "id": "VEHICLE_YEAR",
+      "name": "Año",
+      "value_id": "423562",
+      "value_name": "2016",
+      "attribute_group_id": "FIND",
+      "attribute_group_name": "Ficha técnica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "423562",
+          "name": "2016",
+          "struct": null,
+          "source": 1073977811386678
+        }
+      ],
+      "source": 1073977811386678,
+      "value_type": "number"
+    },
+    {
+      "id": "ENGINE_DISPLACEMENT",
+      "name": "Cilindrada",
+      "value_id": "2326646",
+      "value_name": "1.6 L",
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_struct": {
+        "number": 1.6,
+        "unit": "L"
+      },
+      "values": [
+        {
+          "id": "2326646",
+          "name": "1.6 L",
+          "struct": {
+            "unit": "L",
+            "number": 1.6
+          },
+          "source": 3298252595505050
+        }
+      ],
+      "source": 3298252595505050,
+      "value_type": "number_unit"
+    },
+    {
+      "id": "PASSENGER_CAPACITY",
+      "name": "Capacidad de personas",
+      "value_id": "458562",
+      "value_name": "5",
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "458562",
+          "name": "5",
+          "struct": null,
+          "source": 3298252595505050
+        }
+      ],
+      "source": 3298252595505050,
+      "value_type": "number"
+    },
+    {
+      "id": "POWER",
+      "name": "Potencia",
+      "value_id": "458801",
+      "value_name": "130 hp",
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_struct": {
+        "number": 130,
+        "unit": "hp"
+      },
+      "values": [
+        {
+          "id": "458801",
+          "name": "130 hp",
+          "struct": {
+            "number": 130,
+            "unit": "hp"
+          },
+          "source": 3298252595505050
+        }
+      ],
+      "source": 3298252595505050,
+      "value_type": "number_unit"
+    },
+    {
+      "id": "TRACTION_CONTROL",
+      "name": "Control de tracción",
+      "value_id": "493979",
+      "value_name": "Delantera",
+      "attribute_group_id": "SECURITY",
+      "attribute_group_name": "Seguridad",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "493979",
+          "name": "Delantera",
+          "struct": null,
+          "source": 3298252595505050
+        }
+      ],
+      "source": 3298252595505050,
+      "value_type": "list"
+    }
+  ],
+  "location": {
+    "address_line": "",
+    "zip_code": "",
+    "subneighborhood": null,
+    "neighborhood": {
+      "id": "TUNPQkxPUzEwMDUz",
+      "name": "Los Ejidos"
+    },
+    "city": {
+      "id": "TUNPQ1BVRTg0NTU0",
+      "name": "Puente Aranda"
+    },
+    "state": {
+      "id": "TUNPUEJPR1gxMDljZA",
+      "name": "Bogotá D.C."
+    },
+    "country": {
+      "id": "CO",
+      "name": "Colombia"
+    },
+    "latitude": 4.6170128,
+    "longitude": -74.0989143
+  },
+  "seller_contact": {
+    "contact": "LEONARDO RAMIREZ.",
+    "other_info": "",
+    "webpage": "",
+    "area_code": "",
+    "phone": "",
+    "area_code2": "",
+    "phone2": "",
+    "email": ""
+  },
+  "installments": null,
+  "winner_item_id": null,
+  "catalog_listing": false,
+  "discounts": null,
+  "promotion_decorations": null,
+  "promotions": null,
+  "inventory_id": null,
+  "installments_motors": null
+}
