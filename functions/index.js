@@ -27,4 +27,7 @@ admin.initializeApp();
 
 exports.scheduledFunctionCrontab = onSchedule("22 0 * * *", async (event) => {
   // ...
+
+  logger.info("Running scheduled task at 12 AM!");
+  start();
 });
