@@ -8,7 +8,7 @@
  */
 
 const logger = require("firebase-functions/logger");
-const { start } = require("../task");
+const { start } = require("./task");
 
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
