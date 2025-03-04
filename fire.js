@@ -36,6 +36,10 @@ const ATTRIBUTES_MAPPERS = [
     value: "permalink",
   },
   {
+    id: "thumbnail",
+    value: "thumbnail",
+  },
+  {
     id: "year",
     get: (car) => {
       const year = car.attributes.find(({ id }) => id === "VEHICLE_YEAR");

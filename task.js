@@ -5,14 +5,15 @@ const { addCars } = require("./fire");
 
 const QUERY_LIMIT = 50;
 const INITIAL_OFFSET = 0;
+const MIN_YEAR = 2019;
 
 const POST_FILTERS = [
   ({ price }) => price <= 62000000,
-  //   ({ attributes }) => {
-  //     const kilometers = attributes.find(({ id }) => id === "KILOMETERS");
-  //     if (!kilometers) return true;
-  //     return kilometers.value_struct.number <= 100000;
-  //   },
+  ({ attributes }) => {
+    const year = attributes.find(({ id }) => id === "VEHICLE_YEAR");
+    if (!year) return true;
+    return +year.value_name >= 2019;
+  },
 ];
 
 const applyPostFilters = (results) => {
@@ -36,6 +37,8 @@ const getCars = async (offset = 0) => {
   url.searchParams.append("price", "4.5E7-9.0E7");
   url.searchParams.append("since", "today");
   url.searchParams.append("KILOMETERS", "[0.001km-35000km]");
+  url.searchParams.append("state", "TUNPUEJPR1gxMDljZA");
+  url.searchParams.append("VEHICLE_YEAR", "[0.001km-35000km]");
 
   url.searchParams.append("offset", `${offset}`);
 
