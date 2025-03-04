@@ -1,35 +1,30 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+// const functions = require("firebase-functions/v2"); // Use v2 for 2nd Gen functions
+// const logger = require("firebase-functions/logger");
+// const admin = require("firebase-admin");
+// const { start } = require("./task");
 
-const logger = require("firebase-functions/logger");
+// admin.initializeApp();
+
+// exports.scheduledFunction = functions.tasks
+//   .schedule({
+//     schedule: "22 0 * * *", // Runs every day at 12 AM UTC
+//     timeZone: "America/Bogota", // Adjust timezone if needed
+//   })
+//   .onDispatch(async () => {
+//     logger.info("Running scheduled task at 12 AM!");
+//     // Your cron job logic here
+//     start();
+//   });
+
+// The Cloud Functions for Firebase SDK to set up triggers and logging.
+const { onSchedule } = require("firebase-functions/v2/scheduler");
+const { logger } = require("firebase-functions");
 const { start } = require("./task");
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
-
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
-
-const functions = require("firebase-functions");
+// The Firebase Admin SDK to delete inactive users.
 const admin = require("firebase-admin");
-
 admin.initializeApp();
 
-logger.info("Carcosa is alive!");
-
-exports.scheduledFunction = functions.pubsub
-  .schedule("14 0 * * *") // Every day at 11 PM UTC
-  .timeZone("America/Bogota") // Adjust to your timezone if needed
-  .onRun((context) => {
-    start();
-    // Your cron job logic here
-    return null;
-  });
+exports.scheduledFunctionCrontab = onSchedule("22 0 * * *", async (event) => {
+  // ...
+});
