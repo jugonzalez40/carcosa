@@ -1,5 +1,4 @@
-const cron = require("node-cron");
-const get = require("lodash.get");
+const logger = require("firebase-functions/logger");
 
 const { addCars } = require("./fire");
 
@@ -12,7 +11,7 @@ const POST_FILTERS = [
   ({ attributes }) => {
     const year = attributes.find(({ id }) => id === "VEHICLE_YEAR");
     if (!year) return true;
-    return +year.value_name >= 2019;
+    return +year.value_name >= MIN_YEAR;
   },
 ];
 
@@ -28,6 +27,7 @@ const applyPostFilters = (results) => {
 
 const getCars = async (offset = 0) => {
   console.log("getCars() offset: ", offset);
+  logger.info("getCars() offset: ", offset);
   const meliAPIUrl = "https://api.mercadolibre.com/sites/MCO/search";
 
   const url = new URL(meliAPIUrl);
@@ -57,6 +57,7 @@ const getFullResults = async () => {
 
   const { total } = paging;
   console.log("total: ", total);
+  logger.info("total: ", total);
 
   const totalPages = Math.ceil(total / QUERY_LIMIT);
 
@@ -74,29 +75,38 @@ const getFullResults = async () => {
   const fullResult = [...results, ...resolvedResults];
 
   console.log("fullResult: ", fullResult.length);
+  logger.info("fullResult: ", fullResult.length);
 
   return fullResult;
 
   //   return applyPostFilters(results);
 };
 
-const init = async () => {
+const start = async () => {
   console.log("====================================");
+  logger.info("====================================");
   console.log("====CARCOSA HAS BEEN TICK ============");
+  logger.info("====CARCOSA HAS BEEN TICK ============");
   console.log(`====AT ${new Date().toISOString()} ===========`);
+  logger.info(`====AT ${new Date().toISOString()} ===========`);
 
   try {
     const result = await getFullResults();
     const filteredResults = applyPostFilters(result);
 
     console.log("PRE FIRE");
+    logger.info("PRE FIRE");
     await addCars(filteredResults);
     console.log("POST FIRE");
+    logger.info("POST FIRE");
   } catch (error) {
     console.log("AN ERROR FATAL");
+    
 
     console.error(error);
   }
 };
-init();
+start();
+module.exports = { start };
+
 // cron.schedule("*/10 * * * * *", init);

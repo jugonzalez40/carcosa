@@ -11,11 +11,6 @@
   "description": "",
   "dependencies": {
     "@firebase/firestore": "^4.7.9",
-    "firebase": "^11.4.0",
-    "lodash.get": "^4.4.2",
-    "node-cron": "^3.0.3"
-  },
-  "devDependencies": {
-    "ts-node": "^10.9.2"
+    "firebase": "^11.4.0"
   }
 }

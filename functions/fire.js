@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 const { initializeApp } = require("firebase/app");
-const { getAnalytics } = require("firebase/analytics");
+const logger = require("firebase-functions/logger");
 const {
   getFirestore,
   collection,
@@ -84,11 +84,15 @@ const collectionRef = collection(db, "cars");
 
 const addCars = (cars) => {
   console.log(`adding cars: `, cars.length);
+  logger.info(`adding cars: `, cars.length);
   const batch = writeBatch(db);
 
   cars.forEach((car) => {
     console.log(`adding car: `, car.id);
+    logger.info(`adding car: `, car.id);
+    
     const transformedCar = transformCar(car);
+    
     const docRef = doc(collectionRef);
     batch.set(docRef, transformedCar);
   });
