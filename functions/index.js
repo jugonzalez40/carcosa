@@ -27,7 +27,7 @@ admin.initializeApp();
 
 exports.scheduledFunctionCrontab = onSchedule(
   {
-    schedule: "46 0 * * *",
+    schedule: "50 23 * * *",
     timeZone: "America/Bogota",
   },
   async (event) => {
