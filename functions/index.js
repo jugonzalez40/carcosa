@@ -26,7 +26,7 @@ admin.initializeApp();
 logger.info("Carcosa is alive!");
 
 exports.scheduledFunction = functions.pubsub
-  .schedule("0 23 * * *") // Every day at 11 PM UTC
+  .schedule("14 0 * * *") // Every day at 11 PM UTC
   .timeZone("America/Bogota") // Adjust to your timezone if needed
   .onRun((context) => {
     start();
