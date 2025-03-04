@@ -106,7 +106,7 @@ const start = async () => {
     console.error(error);
   }
 };
-start();
+// start();
 module.exports = { start };
 
 // cron.schedule("*/10 * * * * *", init);
