@@ -25,7 +25,7 @@ const { start } = require("./task");
 const admin = require("firebase-admin");
 admin.initializeApp();
 
-exports.scheduledFunctionCrontab = onSchedule("22 0 * * *", async (event) => {
+exports.scheduledFunctionCrontab = onSchedule("26 0 * * *", async (event) => {
   // ...
 
   logger.info("Running scheduled task at 12 AM!");
