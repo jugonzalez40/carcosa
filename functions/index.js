@@ -20,14 +20,23 @@
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 const { logger } = require("firebase-functions");
 const { start } = require("./task");
+const { setGlobalOptions } = require("firebase-functions/v2");
+
+setGlobalOptions({ region: "europe-west3" });
 
 // The Firebase Admin SDK to delete inactive users.
 const admin = require("firebase-admin");
 admin.initializeApp();
 
-exports.scheduledFunctionCrontab = onSchedule("30 0 * * *", async (event) => {
-  // ...
+exports.scheduledFunctionCrontab = onSchedule(
+  {
+    schedule: "35 0 * * *",
+    timeZone: "America/Bogota",
+  },
+  async (event) => {
+    // ...
 
-  logger.info("Running scheduled task at 12 AM!");
-  start();
-});
+    logger.info("Running scheduled task at 12 AM!");
+    start();
+  }
+);
