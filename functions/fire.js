@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 const { initializeApp } = require("firebase/app");
 const logger = require("firebase-functions/logger");
+const { defineString } = require("firebase-functions/params");
 const {
   getFirestore,
   collection,
@@ -12,8 +13,9 @@ const {
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
-  apiKey: "AIzaSyC035Fwia3TWrGCSvrE9PJuY_yExPPGF-w",
+  apiKey: defineString("API_KEY"),
   authDomain: "carco-29604.firebaseapp.com",
   projectId: "carco-29604",
   storageBucket: "carco-29604.firebasestorage.app",
